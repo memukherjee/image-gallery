@@ -1,0 +1,45 @@
+.column img {
+  position: relative;
+  border: 5px solid #000;
+  border-top: 0;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.25s;
+  z-index: 0;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+  border: 2px solid rgb(156, 49, 228);
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.image-name {
+  color: #fff;
+  margin: 0;
+  width: fit-content;
+  position: relative;
+  bottom: 40px;
+  background-color: rgba(172, 131, 206, 0.781);
+  padding: 5px 15px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.15s;
+}
+
+.image-name:hover {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.685);
+  color: rgb(100, 29, 158);
+  z-index: 2;
+}
+
+.column img:hover + .image-name {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.685);
+  color: rgb(100, 29, 158);
+  z-index: 2;
+}

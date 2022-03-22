@@ -1,0 +1,18 @@
+.column {
+  flex: 25%;
+  max-width: 20%;
+}
+
+@media (max-width: 900px) {
+  .column {
+    flex: 40%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 90%;
+    max-width: 90%;
+  }
+}
